@@ -11,6 +11,7 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
+
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -72,11 +73,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-            encoder_msc_down_up: encoder_msc_down_up {
+
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -91,7 +94,8 @@
 &kp Z        &kp X   &kp C           &kp V       &kp B                    &trans           &trans       &kp N          &kp M               &kp COMMA  &kp DOT  &kp MINUS
 &trans       &trans  &trans          &trans      &mt LEFT_SHIFT LEFT_WIN  &lt 2 SPACE      &lt 1 ENTER  &kp BACKSPACE                                          &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer1 {
