@@ -103,7 +103,6 @@
 &kp F2       &kp F5       &kp F10        &kp F11  &kp F12           &trans         &trans  &kp SLASH          &kp N1        &kp N2  &kp N3        &kp LS(LCTRL)
 &trans       &trans       &trans         &trans   &kp LANGUAGE_2    &kp LANG1      &trans  &kp DEL                                                &trans
             >;
-                 sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer2 {
@@ -113,7 +112,6 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans     &kp LG(X)       &trans      &trans  &kp LS(NON_US_BACKSLASH)  &trans         &kp LS(N8)    &kp LS(N9)  &trans
 &trans        &trans        &trans        &trans     &kp LEFT_SHIFT  &trans      &trans  &kp DEL                                                            &trans
             >;
-                 sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer3 {
