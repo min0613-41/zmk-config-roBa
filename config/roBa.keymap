@@ -64,15 +64,6 @@
     };
 
     behaviors {
-    encoder_msc_down_up: encoder_msc_down_up {
-        compatible = "zmk,behavior-sensor-rotate";
-        label = "ENCODER_MSC_DOWN_UP";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <20>;
-    };
-
-    behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -93,7 +84,6 @@
 &kp Z        &kp X   &kp C           &kp V       &kp B                    &trans           &trans       &kp N          &kp M               &kp COMMA  &kp DOT  &kp MINUS
 &trans       &trans  &trans          &trans      &mt LEFT_SHIFT LEFT_WIN  &lt 2 SPACE      &lt 1 ENTER  &kp BACKSPACE                                          &trans
             >;
-             sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer1 {
