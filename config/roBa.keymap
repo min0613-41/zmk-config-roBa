@@ -111,10 +111,10 @@
 
         layer2 {
             bindings = <
-&kp ESC       &trans        &trans        &kp LG(R)  &trans                              &kp LA(F4)                &kp LS(LC(S))  &kp UP_ARROW  &trans      &trans
-&bt BT_CLR    &trans        &trans        &kp TAB    &trans          &trans      &trans  &trans                    &kp LEFT       &kp DOWN      &kp RIGHT   &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans     &kp LG(X)       &trans      &trans  &kp LS(NON_US_BACKSLASH)  &trans         &kp LS(N8)    &kp LS(N9)  &trans
-&trans        &trans        &trans        &trans     &kp LEFT_SHIFT  &trans      &trans  &kp DEL                                                            &trans
+&kp ESC       &trans        &trans        &kp LG(R)    &trans                              &kp LA(F4)                &kp LS(LC(S))  &kp UP_ARROW  &trans      &trans
+&bt BT_CLR    &trans        &trans        &kp TAB      &trans          &trans      &trans  &trans                    &kp LEFT       &kp DOWN      &kp RIGHT   &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp AT_SIGN  &kp LG(X)       &trans      &trans  &kp LS(NON_US_BACKSLASH)  &trans         &kp LS(N8)    &kp LS(N9)  &trans
+&trans        &trans        &trans        &trans       &kp LEFT_SHIFT  &trans      &trans  &kp DEL                                                            &trans
             >;
         };
 
