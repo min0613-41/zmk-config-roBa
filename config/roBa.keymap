@@ -61,21 +61,21 @@
         macro_1: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LEFT &kp RIGHT_BRACKET>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LEFT &kp LEFT_BRACKET>;
             label = "TO_LAYER_0";
         };
 
         macro_2: macro_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(N8) &kp LEFT &kp LS(N9)>;
+            bindings = <&kp INT_MUHENKAN &kp LS(N9) &kp LEFT &kp LS(N8)>;
             label = "MACRO_KAKKO";
         };
 
         macro_3: macro_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(COMMA) &kp LEFT &kp LS(PERIOD)>;
+            bindings = <&kp INT_MUHENKAN &kp LS(COMMA) &kp LEFT &kp LS(PERIOD)>;
             label = "MACRO_3";
         };
     };
@@ -127,10 +127,10 @@
 
         layer2 {
             bindings = <
-&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)    &trans                                    &trans                    &kp LS(LC(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
-&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB      &macro_1        &bt BT_SEL 0      &trans  &kp LS(LC(H))             &kp LEFT       &kp DOWN      &kp RIGHT      &trans
-&trans     &kp LG(R)    &kp ESC           &kp AT_SIGN  &kp LA(F4)      &trans            &trans  &kp LS(NON_US_BACKSLASH)  &kp LS(LC(M))  &macro_2      &macro_3       &trans
-&trans     &trans       &trans            &trans       &kp LEFT_SHIFT  &trans            &trans  &kp DEL                                                               &trans
+&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)          &trans                                    &trans                    &kp LS(LC(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
+&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB            &macro_1        &bt BT_SEL 0      &trans  &kp LS(LC(H))             &kp LEFT       &kp DOWN      &kp RIGHT      &trans
+&trans     &kp LG(R)    &kp ESC           &kp RIGHT_BRACKET  &kp LA(F4)      &trans            &trans  &kp LS(NON_US_BACKSLASH)  &kp LS(LC(M))  &macro_2      &macro_3       &trans
+&trans     &trans       &trans            &trans             &kp LEFT_SHIFT  &trans            &trans  &kp DEL                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
