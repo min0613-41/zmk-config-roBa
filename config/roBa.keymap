@@ -62,7 +62,7 @@
         underbar: underbar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN &kp A &kp N &kp N &kp D &kp A &kp MINUS &kp B &kp A &kp MINUS &kp A &kp SPACE &kp ENTER>;
+            bindings = <&kp INT_HENKAN &kp A &kp N &kp N &kp D &kp A &kp MINUS &kp B &kp A &kp MINUS &kp SPACE &kp ENTER>;
             label = "UNDERBAR";
         };
     };
