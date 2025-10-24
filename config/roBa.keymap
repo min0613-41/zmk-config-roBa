@@ -61,21 +61,21 @@
         macro_1: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp LEFT &kp BACKSLASH>;
+            bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT>;
             label = "TO_LAYER_0";
         };
 
         macro_2: macro_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN &kp LS(N9) &kp LEFT &kp LS(N8)>;
+            bindings = <&kp INT_MUHENKAN &kp LS(N8) &kp LS(N9) &kp LEFT>;
             label = "MACRO_KAKKO";
         };
 
         macro_3: macro_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN &kp LS(COMMA) &kp LEFT &kp LS(PERIOD)>;
+            bindings = <&kp INT_MUHENKAN &kp LS(COMMA) &kp LS(PERIOD) &kp LEFT>;
             label = "MACRO_3";
         };
 
