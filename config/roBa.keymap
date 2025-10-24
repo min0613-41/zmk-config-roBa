@@ -28,34 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&macro_1 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         macro_1: to_layer_0 {
@@ -84,6 +57,13 @@
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN &kp K &kp O &kp R &kp O &kp N &kp SPACE &kp ENTER>;
             label = "NEW_MACRO";
+        };
+
+        underbar: underbar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_HENKAN &kp A &kp N &kp N &kp D &kp A &kp MINUS &kp B &kp A &kp MINUS &kp A &kp SPACE &kp ENTER>;
+            label = "UNDERBAR";
         };
     };
 
@@ -136,7 +116,7 @@
             bindings = <
 &trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)         &trans                                    &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
 &kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB           &macro_1        &bt BT_SEL 0      &trans  &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &trans
-&trans     &kp LG(R)    &kp ESC           &kp LEFT_BRACKET  &kp LA(F4)      &trans            &trans  &kp LS(MINUS)  &kp LS(LC(M))  &macro_2      &macro_3       &trans
+&trans     &kp LG(R)    &kp ESC           &kp LEFT_BRACKET  &kp LA(F4)      &trans            &trans  &underbar      &kp LS(LC(M))  &macro_2      &macro_3       &trans
 &trans     &trans       &trans            &trans            &kp LEFT_SHIFT  &trans            &trans  &kp DEL                                                    &trans
             >;
 
