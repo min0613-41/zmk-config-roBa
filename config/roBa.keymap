@@ -61,7 +61,7 @@
         macro_1: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp LEFT &kp LS(LA(RIGHT_BRACKET))>;
+            bindings = <&kp RIGHT_BRACKET &kp LEFT &kp BACKSLASH>;
             label = "TO_LAYER_0";
         };
 
