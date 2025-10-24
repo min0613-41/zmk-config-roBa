@@ -113,7 +113,7 @@
         default_layer {
             bindings = <
 &trans           &kp W   &kp K           &kp COMMA   &trans                                               &trans         &kp X               &kp I  &kp O  &trans
-&mt RCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt RWIN T  &kp H                  &mkp MB1         &trans       &kp Y          &mt LEFT_CONTROL A  &kp E  &kp U  &kp P
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt RWIN T  &kp H                  &mkp MB1         &trans       &kp Y          &mt LEFT_CONTROL A  &kp E  &kp U  &kp P
 &trans           &kp R   &kp F           &kp M       &kp B                  &trans           &trans       &kp G          &kp D               &kp C  &kp V  &kp Z
 &trans           &trans  &trans          &trans      &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &kp BACKSPACE                                    &trans
             >;
@@ -134,10 +134,10 @@
 
         layer2 {
             bindings = <
-&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)         &trans                                    &trans                    &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
-&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB           &macro_1        &bt BT_SEL 0      &trans  &kp LS(LC(H))             &kp LEFT       &kp DOWN      &kp RIGHT      &trans
-&trans     &kp LG(R)    &kp ESC           &kp LEFT_BRACKET  &kp LA(F4)      &trans            &trans  &kp LS(NON_US_BACKSLASH)  &kp LS(LC(M))  &macro_2      &macro_3       &trans
-&trans     &trans       &trans            &trans            &kp LEFT_SHIFT  &trans            &trans  &kp DEL                                                               &trans
+&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)         &trans                                    &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
+&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB           &macro_1        &bt BT_SEL 0      &trans  &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &trans
+&trans     &kp LG(R)    &kp ESC           &kp LEFT_BRACKET  &kp LA(F4)      &trans            &trans  &kp LS(MINUS)  &kp LS(LC(M))  &macro_2      &macro_3       &trans
+&trans     &trans       &trans            &trans            &kp LEFT_SHIFT  &trans            &trans  &kp DEL                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
