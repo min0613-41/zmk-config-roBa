@@ -28,7 +28,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        sample {
+            bindings = <&kp LS(LC(F))>;
+            key-positions = <24 23>;
+        };
+
+        e {
+            bindings = <&kp LS(LC(E))>;
+            key-positions = <31 32>;
+        };
+    };
 
     macros {
         macro_1: to_layer_0 {
