@@ -34,31 +34,85 @@
         sample {
             bindings = <&kp LS(LC(F))>;
             key-positions = <24 23>;
+            layers = <0>;
         };
 
         e {
             bindings = <&kp LS(LC(E))>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         h {
             bindings = <&kp H>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         b {
             bindings = <&kp B>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
         y {
             bindings = <&kp Y>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         g {
             bindings = <&kp G>;
             key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        commbo {
+            bindings = <&new_macro>;
+            key-positions = <19 18>;
+            layers = <1>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <30 31>;
+            layers = <1>;
+        };
+
+        semicorron {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <13 12>;
+            layers = <1>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <25 24>;
+            layers = <1>;
+        };
+
+        exitmeeting {
+            bindings = <&kp LS(LC(H))>;
+            key-positions = <18 19>;
+            layers = <2>;
+        };
+
+        underbar {
+            bindings = <&underbar>;
+            key-positions = <31 30>;
+            layers = <2>;
+        };
+
+        kakko {
+            bindings = <&macro_1>;
+            key-positions = <13 12>;
+            layers = <2>;
+        };
+
+        finishapp {
+            bindings = <&kp LA(F4)>;
+            key-positions = <25 24>;
+            layers = <2>;
         };
     };
 
