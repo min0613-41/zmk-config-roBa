@@ -40,6 +40,26 @@
             bindings = <&kp LS(LC(E))>;
             key-positions = <31 32>;
         };
+
+        h {
+            bindings = <&kp H>;
+            key-positions = <12 13>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <24 25>;
+        };
+
+        y {
+            bindings = <&kp Y>;
+            key-positions = <18 19>;
+        };
+
+        g {
+            bindings = <&kp G>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
