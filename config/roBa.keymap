@@ -197,8 +197,8 @@
         layer1 {
             bindings = <
 &trans  &kp Q   &kp PAGE_DOWN  &kp LA(LS(F12))  &trans                                        &trans      &kp N7        &kp N8  &kp N9        &trans
-&kp F2  &kp L   &kp J          &kp F12          &kp SEMICOLON     &bt BT_CLR_ALL      &trans  &trans      &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N0
-&trans  &kp F5  &kp F10        &kp F11          &kp F7            &trans              &trans  &trans      &kp N1        &kp N2  &kp N3        &kp TILDE
+&kp F2  &kp L   &kp J          &kp F12          &kp SEMICOLON     &bt BT_CLR_ALL      &trans  &new_macro  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N0
+&trans  &kp F5  &kp F10        &kp F11          &kp F7            &trans              &trans  &kp SLASH   &kp N1        &kp N2  &kp N3        &kp TILDE
 &trans  &trans  &trans         &trans           &kp INT_MUHENKAN  &kp INT_HENKAN      &trans  &kp PERIOD                                      &trans
             >;
 
@@ -207,10 +207,10 @@
 
         layer2 {
             bindings = <
-&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)  &trans                                &trans   &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
-&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB    &macro_1    &bt BT_SEL 0      &trans  &trans   &kp LEFT       &kp DOWN      &kp RIGHT      &trans
-&trans     &kp LG(R)    &kp ESC           &atmark    &kp LA(F4)  &trans            &trans  &trans   &kp LS(LC(M))  &macro_2      &macro_3       &trans
-&trans     &trans       &trans            &trans     &trans      &trans            &trans  &kp DEL                                              &trans
+&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)  &trans                                &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
+&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB    &macro_1    &bt BT_SEL 0      &trans  &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &trans
+&trans     &kp LG(R)    &kp ESC           &atmark    &kp LA(F4)  &trans            &trans  &underbar      &kp LS(LC(M))  &macro_2      &macro_3       &trans
+&trans     &trans       &trans            &trans     &trans      &trans            &trans  &kp DEL                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
