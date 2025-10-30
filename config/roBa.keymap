@@ -235,7 +235,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer5 {
