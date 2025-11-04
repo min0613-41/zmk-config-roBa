@@ -114,6 +114,11 @@
             key-positions = <25 24>;
             layers = <2>;
         };
+
+        henkan {
+            bindings = <&kp LANG_ZENKAKUHANKAKU>;
+            key-positions = <12 11>;
+        };
     };
 
     macros {
