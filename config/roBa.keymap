@@ -115,10 +115,20 @@
             layers = <2>;
         };
 
-        henkan {
+        l {
             bindings = <&kp L>;
             key-positions = <12 11>;
             layers = <0>;
+        };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <1 2>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <13 14>;
         };
     };
 
