@@ -21,7 +21,6 @@ include:
   - board:  xiao_ble
     shield: roBa_R
     snippet: studio-rpc-usb-uart
-    cmake-args: -DZMK_EXTRA_MODULES=$min0613_41/zmk-config-roBa
 
   - board:  xiao_ble
     shield: roBa_L
