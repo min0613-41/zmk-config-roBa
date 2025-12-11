@@ -130,6 +130,12 @@
             bindings = <&kp J>;
             key-positions = <13 14>;
         };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -201,10 +207,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &kp COMMA   &trans                                               &trans         &kp X               &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt RWIN T  &kp H                  &to 3            &trans       &kp Y          &mt LEFT_CONTROL A  &kp E  &kp U  &kp P
-&trans           &kp R   &kp F           &kp M       &kp B                  &trans           &trans       &kp G          &kp D               &kp C  &kp V  &lt 3 Z
-&trans           &trans  &trans          &trans      &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &kp BACKSPACE                                    &trans
+&trans           &kp W   &kp K           &kp COMMA   &trans                                               &trans           &kp Z               &kp I  &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt RWIN T  &kp H                  &to 3            &trans       &kp Y            &mt LEFT_CONTROL A  &kp E  &kp U  &mt LEFT_SHIFT P
+&trans           &kp R   &kp F           &kp M       &kp B                  &trans           &trans       &kp G            &kp D               &kp C  &kp V  &trans
+&trans           &trans  &trans          &trans      &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 3 BACKSPACE                                    &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
