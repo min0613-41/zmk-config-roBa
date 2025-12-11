@@ -3,8 +3,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    secrets: inherit
-    with:
-      # 再利用WFがこれらの入力を受け付ける場合に限り：
-      artifact-name: firmware-${{ github.run_id }}   # ← 毎回ユニーク
-      # cmake-args: -DWEST_PYTHON=/usr/bin/python3 など
