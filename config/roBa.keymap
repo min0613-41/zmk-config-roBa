@@ -241,8 +241,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                 &trans     &kp LC(X)  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &kp LS(SEMICOLON)  &to 0       &trans  &kp LC(C)  &mkp MB1   &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &kp LS(SQT)        &trans      &trans  &kp LC(V)  &mkp MB4   &trans    &mkp MB5  &kp LC(Z)
+&trans  &trans  &trans  &trans  &kp LS(SEMICOLON)  &to 0       &trans  &kp LC(C)  &mkp MB1   &mkp MB3  &mkp MB2  &kp LC(Z)
+&trans  &trans  &trans  &trans  &kp LS(SQT)        &trans      &trans  &kp LC(V)  &mkp MB4   &trans    &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans             &trans      &trans  &trans                                    &trans
             >;
 
