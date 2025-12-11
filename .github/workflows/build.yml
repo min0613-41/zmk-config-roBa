@@ -1,3 +1,5 @@
+name: ZMK build (pristine)
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
@@ -12,22 +14,17 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      # 🔐 ここで "コンテナの git" に対して安全ディレクトリを追加
       - name: Mark repo as safe
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config --global --add safe.directory "/__w/zmk-config-roBa/zmk-config-roBa"
 
+      - name: Diagnose safe.directory
+        run: |
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          git config --global --get-all safe.directory || true
+
       - name: Pristine workspace
         run: |
           git clean -fdx
-          rm -rf build/ /tmp/tmp.*
-
-      - name: West sync
-        run: |
-          west init -l zmk/app
-          west update
-          west zephyr-export
-
-      - name: Build (settings_reset)
-        run: |
-          west build -s zmk/app -b seeeduino_xiao_ble -- -DSHIELD=settings_reset
