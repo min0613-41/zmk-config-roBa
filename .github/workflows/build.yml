@@ -1,30 +1,5 @@
-name: ZMK build (pristine)
-
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container:
-      image: zmkfirmware/zmk-build-arm:stable
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      # 🔐 ここで "コンテナの git" に対して安全ディレクトリを追加
-      - name: Mark repo as safe
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git config --global --add safe.directory "/__w/zmk-config-roBa/zmk-config-roBa"
-
-      - name: Diagnose safe.directory
-        run: |
-          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
-          git config --global --get-all safe.directory || true
-
-      - name: Pristine workspace
-        run: |
-          git clean -fdx
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
